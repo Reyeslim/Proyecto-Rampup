@@ -1,18 +1,97 @@
-li {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster+Two&family=New+Tegomin&family=Quicksand&family=Tilt+Neon&family=Yuji+Mai&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family:'Libre Baskerville', serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: lavenderblush;
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+ul,
+    ol {
+        list-style: none;
+        margin-top: 50px; 
+        padding: 0;    
+}
+
+nav li {
     display: inline;
     margin: 10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: midnightblue;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: midnightblue;
+}
+
+body {
+    background-color:rgb(235, 229, 229)
+}
+
+h1 {
+    font-family: 'New Tegomin', serif;
+    color:midnightblue;
+    margin-left: 10px;
+}
+
+h2 {
+    color:steelblue;
+    margin-left: 10px;
+}
+
+article {
+    border: 1px midnightblue dashed;
+    text-align: center;
+    background-color: rgb(240, 230, 213);
 }
 
 img {
     display: inline;
-
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 200px;
+    width: 300px;
     height: auto;
+    object-fit: contain;
+}
+
+.oni {
+    width: 300px;
+}
+
+/* .kappa,
+    .yuki-onna {
+        width: 200px;
+} */
+
+
+
+.wrapper {
+    display: flex;
+    justify-content:space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.wrapper > article {
+    width: 20%;
+  }
+
+
+footer {
+    text-align: center;
+    background-color: lavenderblush;
+    height: 100px;
 }

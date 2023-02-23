@@ -4,66 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Librería Hananezumi</title>
+    <title>Home - Reyes' Library</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
     <header>
-        <h1 id="title">LIBRERÍA HANANEZUMI</h1>
+        <h1 class="title">Reyes' Library</h1>
         
         <nav>
             <ul>
                 <li class="section"><a href="./index.html">Home</a></li>
-                <li class="section"><a href="./biografia.html">Quiénes somos</a></li>
-                <li class="section"><a href="./portfolio.html">Catálogo</a></li>
+                <li class="section"><a href="./biografia.html">¿Qué son los yokai?</a></li>
+                <li class="section"><a href="./portfolio.html">Yokai en la cultura popular</a></li>
                 <li class="section"><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="new-manga">
-            <h2>Novedades manga del mes</h2>
-            <article>
-                <h3 class="manga-title">BECK (Edición Kanzenban) 1</h3>
-                <img src="img/beck-edicion-kanzenban-1.jpg" alt="BECK 1 Edición Kanzenban de Harold Sakuishi">
-                <p>15,95€</p>
-            </article>
-            <article>
-                <h3 class="manga-title">Saturn Return 1</h3>
-                <img src="img/Saturn_Return_01.jpg" alt="Saturn Return 1 de Akane Torikai">
-                <p>9,00€</p>
-            </article>
-            <article>
-                <h3 class="manga-title">Gannibal 4</h3>
-                <img src="img/SC-Gannibal-vol.4.jpg" alt="Gannibal 4 de Masaaki Ninomiya">
-                <p>9,00€</p>
-            </article>
+    <main>        
+        <section id="famous-yokai">
+            <h2>Los yokai más famosos</h2>
+            <div class="wrapper">
+                <article id="yokaiOni">
+                    <h3 class="yokai-name">Oni</h3>
+                    <img src="img/oni.jpg" class="oni" alt="Oni junto a un hombre y un zorro de Katsushika Hokusai">
+                    <p>
+                        Son similares a los ogros de la cultura occidental.<br> 
+                        <!-- Se caracterizan por tener la piel azul o roja, cuernos y grandes colmillos.<br> -->
+                        En Japón se celebra todos los años durante el mes de febrero el <strong>Setsubun no Hi</strong>.<br>
+                        Sirve para ahuyentar a estos seres y atraer la buena suerte.<br>
+                        Los adultos se disfrazan de Oni para que los niños les tiren semillas de soja mientras dice: <q>Oni wa soto, fuku wa uchi</q>.
+                    </p>
+                </article>
+                <article id="yokaiKappa">
+                    <h3 class="yokai-name">Kappa</h3>
+                    <img src="img/kappa.png" class="kappa" alt="Kappa en un río persiguiendo a un niño">
+                    <p>
+                        También conocidos como <i>kawawaro</i> o <i>gataro</i>, son uno de los yokais más conocidos en todo el país.<br>
+                        Viven en lagos o ríos, por lo que tienen forma de anfibio, cuerpo verde y aletas en las extremidades.<br>
+                        <!-- Para poder escapar de ellos necesitas hacer una reverencia. Al ser tan educados, la devolverán, dejando caer el agua del plato de su cabeza y perderán sus poderes. -->
+                    </p>
+                </article>
+                <article id="yokaiTengu">
+                    <h3 class="yokai-name">Tengu</h3>
+                    <img src="img/tengu02.jpg" class="tengu" alt="Tengu saltando">
+                    <p>
+                        Tienen la piel roja y una nariz larga. También pueden tener alas y pico de ave. <br>
+                        Suelen llevar un abanico llamado <i><strong>hauchiwa</strong></i> fabricado con hojas que tiene el poder de crear fuertes ráfagas de viento.
+                    </p>
+                </article>
+            </div>
         </section>
         
-        <section id="new-books">
-            <h2>Novedades en libros</h2>
-            <article>
-                <h3 class="book-title">Lightlark</h3>
-                <img src="img/9788419191755.jpg" alt="Lightlark de Alex Aster">
-                <p>19,95€</p>
-            </article>
-            <article>
-                <h3 class="book-title">La enciclopedia de las hadas</h3>
-                <img src="img/9d5208bc6dabc9ecb648ea4f13550340.jpg" alt="La enciclopedia de las hadas de Emily Wilde">
-                <p>17,90€</p>
-            </article>
-            <article>
-                <h3 class="book-title">Belladona</h3>
-                <img src="img/bf8dfe2152245b166de4060c1f03711a.jpg" alt="Belladona de Adalyn Grace">
-                <p>19,00€</p>
-            </article>
+        <section id="fav-yokai">
+            <h2>Mis yokai favoritos</h2>
+            <div class="wrapper">
+                <article>
+                    <h3 class="yokai-name">Yuki-onna</h3>
+                    <img src="img/Suuhi_Yuki-onna.jpg" class="yuki-onna" alt="Yuki-onna de Sawaki Suushi">
+                    <p>
+                        También conocida como: <q>La Dama de las Nieves</q>, es un fantasma que se esconde dentro de las tormentas de nieve.<br>
+                    </p>
+                </article>
+                <article>
+                    <h3 class="yokai-name">Baku</h3>
+                    <img src="img/Baku.jpg" class="baku" alt="Baku de Shigeru Mizuki">
+                    <p>
+                        Está formado por partes de diversos animales. 
+                        Se encarga de comerse las pesadillas o los malos sueños.
+                    </p>
+                </article>
+                <article>
+                    <h3 class="yokai-name">Gashadokuro</h3>
+                    <img src="img/gashadokuro.jpg" class="gashadokuro" alt="Gashadokuro de Shigeru Mizuki">
+                    <p>
+                        Nace como resultado del rencor de los cadáveres caídos en el campo de batalla.
+                    </p>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer id="library-copy">
-        &copy; Librería Hananezumi 2023
+        &copy; Reyes' Library 2023
     </footer>
 </body>
 </html>
