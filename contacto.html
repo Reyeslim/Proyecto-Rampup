@@ -20,6 +20,28 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <form>
+            <h2>¿Quieres aportar información sobre algún yokai?</h2>
+            <fieldset>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" placeholder="Nombre" tabindex="1" autofocus><br>
+
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" id="email" placeholder="Correo electrónico" tabindex="2"><br>
+
+                <label for="asunto">Asunto</label><br>
+                <select id="asunto" tabindex="3">
+                    <option value="error">Quiero informar de un error</option>
+                    <option value="info" selected>Tengo información sobre Yokai</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" placeholder="Escribe aquí..." tabindex="4" cols="50" rows="10"></textarea><br>
+                <input type="submit" value="Enviar" tabindex="5">
+            </fieldset>
+        </form>
+    </main>
     <footer id="library-copy">
         &copy; Reyes' Library 2023
     </footer>
