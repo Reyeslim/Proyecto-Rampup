@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster+Two&family=New+Tegomin&family=Quicksand&family=Tilt+Neon&family=Yuji+Mai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ashito');
 
 * {
     box-sizing: border-box;
@@ -23,6 +24,7 @@ header {
     align-items: center;
     line-height: 60px;
     position: fixed;
+    z-index: 1;
 }
 
 nav {
@@ -49,7 +51,7 @@ nav a,
         a {
             text-decoration: none;
             color: #AC3B61;
-            font-size: 22.4px;;
+            font-size: 19px;;
             font-weight: bold;
             border-radius: 5px;
 }
@@ -84,7 +86,9 @@ h2 {
 }
 
 h3 {
-    font-size: 19px;
+    font-family: 'Ashito', sans-serif;
+    font-size: 35px;
+    font-weight:400;
     margin: 0px;
     padding: 5px;
 }
@@ -110,7 +114,7 @@ article {
     flex-direction: column;
     align-items: stretch;
     background-blend-mode:overlay;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -122,13 +126,19 @@ img {
 
 .cine-foto {
     height: 400px;
-    border-radius: 60%;
     margin-top: 70px;
 }
 
+/* .mawile,
+    .cine-foto {
+    height: 400px;
+    /* padding: 0px 10px;
+} */
+
 video {
     max-width: 100%;
-    height: 300px;
+    height: 200px;
+    z-index: 2;
 }
 
 .wrapper {
@@ -152,14 +162,45 @@ video {
     margin: auto;
 }
 
-fieldset {
-    text-align: center;
-    margin: 50px;
+  fieldset {
+    width: 60%;
+    margin: 10px auto;
+    padding: 20px;
+    border: 3px dashed #cc5079;
+    border-radius: 5px;
+    background-color: #efdbd2;
   }
-
-textarea {
-    resize: none;
-}
+  
+  label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  input,
+    select,
+        textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        border: 2px solid #cc5079b7;
+        border-radius: 4px;
+        font-size: 16px;
+        resize: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #EDC7B7;
+    color: #AC3B61;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #eabdaa;
+  }
 
 footer {
     text-align: center;
@@ -193,6 +234,13 @@ footer {
         margin: 7px;
     }
    
+    #yokai-origin {
+        width: 80%;
+    }
+
+    fieldset {
+        width: 60%;
+    }
 
     nav {
         display: block;
