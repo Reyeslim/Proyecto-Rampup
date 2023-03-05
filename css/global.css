@@ -7,13 +7,14 @@
     font-family: 'Varela Round', sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-strong, i {
-    font-size: inherit;
+strong,
+    i {
+        font-size: inherit;
 }
 
 header {
@@ -35,7 +36,7 @@ nav {
 nav li {
     display: inline;
     margin-left: 16px;
-    
+
 }
 
 .nav-icon {
@@ -47,13 +48,13 @@ nav li {
 
 }
 
-nav a, 
-        a {
-            text-decoration: none;
-            color: #AC3B61;
-            font-size: 19px;;
-            font-weight: bold;
-            border-radius: 5px;
+nav a,
+    a {
+        text-decoration: none;
+        color: #AC3B61;
+        font-size: 19px;
+        font-weight: bold;
+        border-radius: 5px;
 }
 
 nav a:hover,
@@ -63,7 +64,7 @@ nav a:hover,
 }
 
 body {
-    background-color:#EEE2CD;
+    background-color: #EEE2CD;
 }
 
 main {
@@ -73,13 +74,13 @@ main {
 .title {
     font-family: 'New Tegomin', serif;
     font-size: 25px;
-    color:#AC3B61;
+    color: #AC3B61;
     margin-left: 16px;
 
 }
 
 h2 {
-    color:#123C69;
+    color: #123C69;
     font-size: 23px;
     margin-left: 10px;
     margin-top: 10px;
@@ -88,14 +89,15 @@ h2 {
 h3 {
     font-family: 'Ashito', sans-serif;
     font-size: 35px;
-    font-weight:400;
+    font-weight: 400;
     margin: 0px;
     padding: 5px;
 }
 
-p, li {
-    margin: 10px;
-    margin-left: 15px;
+p,
+    li {
+        margin: 10px;
+        margin-left: 15px;
 }
 
 article {
@@ -113,7 +115,7 @@ article {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    background-blend-mode:overlay;
+    background-blend-mode: overlay;
     width: 100%;
     margin: auto;
 }
@@ -122,18 +124,12 @@ img {
     width: 100%;
     height: 200px;
     object-fit: contain;
-  }
+}
 
 .cine-foto {
     height: 400px;
     margin-top: 70px;
 }
-
-/* .mawile,
-    .cine-foto {
-    height: 400px;
-    /* padding: 0px 10px;
-} */
 
 video {
     max-width: 100%;
@@ -143,7 +139,7 @@ video {
 
 .wrapper {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-flow: row;
     flex-wrap: wrap;
     align-items: stretch;
@@ -151,7 +147,7 @@ video {
 
 .wrapper > article {
     width: 100%;
-  }
+}
 
 .cine {
     height: 96.8%;
@@ -162,22 +158,22 @@ video {
     margin: auto;
 }
 
-  fieldset {
+fieldset {
     width: 60%;
     margin: 10px auto;
     padding: 20px;
     border: 3px dashed #cc5079;
     border-radius: 5px;
     background-color: #efdbd2;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  input,
+}
+
+input,
     select,
         textarea {
         width: 100%;
@@ -187,25 +183,25 @@ video {
         border-radius: 4px;
         font-size: 16px;
         resize: none;
-  }
-  
-  input[type="submit"] {
-    background-color: #EDC7B7;
-    color: #AC3B61;
+}
+
+.submit {
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
+    background-color: #EDC7B7;
+    color: #AC3B61;
+}
+
+.submit:hover {
     background-color: #eabdaa;
-  }
+}
 
 footer {
     text-align: center;
     background-color: #EDC7B7;
-    color:#AC3B61;
+    color: #AC3B61;
     width: 100%;
     line-height: 60px;
     height: 80px;
@@ -219,7 +215,7 @@ footer {
 /* Desktop */
 
 @media (min-width: 768px) {
-    .wrapper > article {
+    .wrapper>article {
         width: 32.5%;
     }
 
@@ -233,7 +229,7 @@ footer {
         flex-flow: row;
         margin: 7px;
     }
-   
+
     #yokai-origin {
         width: 80%;
     }
